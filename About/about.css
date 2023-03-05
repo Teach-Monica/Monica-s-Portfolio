@@ -35,6 +35,12 @@
  position: fixed;
  left:50%;
 }
+/* .header-about{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: black;
+} */
 .my-photo{
     height: 433px;
     margin-left: 131px;
@@ -59,6 +65,9 @@
     display: flex;
     word-break: break-word;
     line-height: 25px;
+        position: relative;
+        right: 70px;
+    
     
 }
 .container{
@@ -67,11 +76,71 @@
     justify-content: space-around;
     align-items: center;
     gap: 0px;
+    margin-top: 30px;
+}
+/* button */
+.btn-icon{
+    width: 100%;
+    margin: auto;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+  
+  .fa {
+    padding: 0px;
+    width: 0px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: #022A55;
+    color: white;
+  }
+  .fa-github {
+    background: #022A55;
+    color: white;
+  }
+  .fa-phone {
+    background: #022A55;
+    color: white;
+  }
+  .fa-envelope {
+    background: #022A55;
+    color: white;
+  }
+  
+  #round {
+    padding: 8px;
+    font-size: 15px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px 5px;
+    border-radius: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  .nav-buttons{
+        display: none;
+  }
+  .nav-name{
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
     .container{
-       
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -96,6 +165,8 @@
         display: flex;
         word-break: break-word;
         line-height: 25px;
+        position: relative;
+        right: 0;
     }
     .detail-container{
         height: auto;
@@ -109,9 +180,28 @@
         padding-top: 0px;
         margin-top: 40px;
     }
-    .about{
-        background-image: url(https://cdn.myportfolio.com/4ebaa126-52bc-40a4-92cd-2eaf82b8f18f/e445aeda-308c-4969-b811-8a0312ede5e1_rwc_10x0x1979x2800x4096.png?h=1e546330ee219f60efeb72b10e7b604a);
-        background-size: cover;
+    .btn-icon{
+        width: 100%;
+        margin: auto;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+      }
+      #round {
+        padding: 8px;
+        font-size: 15px;
+        width: 18px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0px 5px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        margin-top: 0;
     }
 
 }
