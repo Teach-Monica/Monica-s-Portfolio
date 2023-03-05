@@ -130,8 +130,25 @@
     margin: 30px 5px;
     border-radius: 50%;
 }
-
+.mobile-nav{
+  display: none;
+}
 @media only screen and (max-width: 600px) {
+    .mobile-nav{
+      display: block;
+    }
+    nav {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+
   .nav-buttons{
         display: none;
   }
