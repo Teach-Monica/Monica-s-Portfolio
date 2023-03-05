@@ -1,0 +1,202 @@
+body{
+    background-color:#f0d47c;
+    
+}
+.background-image{
+    background-image:url("https://cdn.myportfolio.com/4ebaa126-52bc-40a4-92cd-2eaf82b8f18f/59baa621-bd96-4acc-9996-25b536956512_rwc_0x5x989x1077x4096.gif?h=7bf25bb8e8f342af9bae86ea188aa3ab");
+    background-position: center center;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    float:right
+}
+#big-text{
+    color: #022A55;
+    font-family: sans-serif;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    text-align: left;
+    padding-top: 15%;
+    padding-left: 1%;
+    padding-bottom: 0px; 
+    
+}
+.s-text{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: none;
+    text-align: left;
+    height: 30%;
+    width: 33%;
+    margin-top: 30px;
+    padding-left: 1%;
+}
+.span-text{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.wrap {
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin-left: 20px;
+  }
+  
+  .button {
+    width: 120px;
+    height: 40px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.5px;
+    background-color: #022A55;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 5px 8px rgba( 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    }
+  
+  .button:hover {
+    background-color:#f0d47c;
+    box-shadow: 0px 15px 20px #022A55;
+    color: #022A55;
+    transform: translateY(-7px);
+  }
+
+  .btn-icon{
+    width: 100%;
+    margin: auto;
+    margin-left: 20px;
+  }
+  
+  .fa {
+    padding: 0px;
+    width: 0px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: #022A55;
+    color: white;
+  }
+  .fa-github {
+    background: #022A55;
+    color: white;
+  }
+  .fa-phone {
+    background: #022A55;
+    color: white;
+  }
+  .fa-envelope {
+    background: #022A55;
+    color: white;
+  }
+  
+  #round {
+    padding: 8px;
+    font-size: 15px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px 5px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .background-image{
+        background-image:url("https://cdn.myportfolio.com/4ebaa126-52bc-40a4-92cd-2eaf82b8f18f/59baa621-bd96-4acc-9996-25b536956512_rwc_0x5x989x1077x4096.gif?h=7bf25bb8e8f342af9bae86ea188aa3ab");
+        background-position: center center;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        object-fit: contain;
+    }
+    .s-text {
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: none;
+        text-align: left;
+        width: 100%;
+        margin-top: 18px;
+    }
+    #big-text {
+        color: #022A55;
+        font-family: sans-serif;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 750;
+        line-height: 20px;
+        padding-bottom: 0px;
+        padding-top: 5px;
+    }
+    .button {
+        width: 80px;
+        height: 30px;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        background-color: #022A55;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 5px 8px rgb(0 0 0);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        margin-left: 0;
+    }
+    .btn-icon{
+        display: flex;
+        align-items:flex-start;
+        justify-content:flex-start;
+        width: 100%;
+        margin: auto;
+    }
+    .wrap{
+        margin-left: 5px;
+    }
+    
+    
+}
+
+
+
+
+
+
