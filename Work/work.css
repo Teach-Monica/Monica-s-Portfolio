@@ -191,6 +191,7 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+    max-width: 740px;
     
 }
 .skills-icon{
