@@ -45,7 +45,7 @@
     justify-content: space-around;
     align-items: center;
     margin-right: 30px;
-    width: 80%;
+    width: 90%;
 }
 .education-header{
     margin-bottom: 50px;
@@ -56,12 +56,14 @@
     left: -19px;
     top: -14px;
     font-family: sans-serif;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 1, 2);
 }
 .education-header-bg{
     background-color: #f0d47c;
     width: 140px;
-    height: 18px;
+    height: 30px;
     margin-bottom: 50px;
+    
 }
 .guvi-header{
     font-family: sans-serif;
@@ -73,8 +75,8 @@
 .guvi{
     font-family: 'Genos', sans-serif;
     color: #022A55;
-    font-size: 16px;
-    font-weight: bolder;
+    font-size: 15px;
+    font-weight: bold;
     margin: 3px;
     margin-bottom: 40px;
 }
@@ -119,11 +121,12 @@
     left: -19px;
     top: -14px;
     font-family: sans-serif;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 1);
 }
 .experience-header-bg{
     background-color: #f0d47c;
     width: 150px;
-    height: 18px;
+    height: 30px;
     margin-bottom: 50px;
 }
 .intership-header{
@@ -132,12 +135,13 @@
     font-weight: bold;
     margin-bottom: 10px;
     font-family: sans-serif;
+    
 }
 .intership{
     font-family: 'Genos', sans-serif;
     color: #022A55;
     font-size: 16px;
-    font-weight: bolder;
+    font-weight: bold;
     margin: 3px;
     margin-bottom: 20px;
 }
@@ -176,11 +180,13 @@
     left: -19px;
     top: -14px;
     font-family: sans-serif;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 1);
+    width: 60px;
 }
 .skills-header-bg{
     background-color: #f0d47c;
     width: 66px;
-    height: 18px;
+    height: 30px;
     margin-bottom: 50px;
     margin-top: 30px;
 }
@@ -192,7 +198,6 @@
     align-items: center;
     width: 80%;
     max-width: 740px;
-    
 }
 .skills-icon{
     width: 70px;
@@ -202,17 +207,17 @@
     margin: 10px;
     border: 1px solid #022A55;
     background-color:#022A55;
-    box-shadow: 0px 5px 10px 0px rgba(3, 8, 1, 2)
+    box-shadow: 0px 5px 10px 0px rgba(3, 8, 1, 2);
 }
 /* projects */
 .project{
     margin-top: 50px;
-    margin-left: 45px;
+    /* margin-left: 45px; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-right: 41px;
+    /* margin-right: 41px; */
 }
 .project-header{
     margin-bottom: 50px;
@@ -223,28 +228,62 @@
     left: -19px;
     top: -14px;
     font-family: sans-serif;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 1);
 }
 .project-header-bg{
     background-color: #f0d47c;
     width: 98px;
-    height: 18px;
+    height: 30px;
     margin-bottom: 50px;
     margin-top: 30px;
+}
+.project-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    position: relative;
+    font-family: sans-serif;
+    bottom: 62px;
 }
 /* project card */
 .project-card{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    width: 300px;
-    height: 400px;
+    width: 600px;
+    height: 250px;
     background-color: #022A55;
-
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(3, 8, 1, 2);
 }
 .card-image{
-    width: 260px;
+    display: flex;
+    width: 280px;
     height: 200px;
+    object-fit: cover;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 23px;
+    box-shadow: 0px 5px 10px 0px rgba(3, 8, 1, 2);
+}
+.card-detail{
+    margin-right: 15px;
+    color: #f0d47c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.peoject-name{
+    font-weight: bold;
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    color:#e4bc4c;
+    box-shadow: 0px 5px 10px 0px rgba(3, 8, 1, 2);
+    display: inline;
 }
 
 
@@ -270,6 +309,50 @@
     }
     .education-right{
         margin-right: 5px;
+    }
+    /* experience */
+    .experience{
+        margin-top: 50px;
+        margin-left: 45px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 41px;
+        width: 99%;
+    }
+    .experience-right{
+        margin-left: -45px;
+    }
+    /* SKILLS */
+    .skills{
+        margin-top: 50px;
+        margin-left: 45px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 41px;
+    }
+    .skills-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 111%;
+        max-width: 740px;
+        
+    }
+    .skills-icon{
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        padding: 5px;
+        margin: 10px;
+        border: 1px solid #022A55;
+        background-color:#022A55;
+        box-shadow: 0px 5px 10px 0px rgba(3, 8, 1, 2)
     }
     
 }
