@@ -2,6 +2,19 @@
     margin: 0;
     /* font-family: sans-serif; */
 }
+/* .about{
+    background-image: url(https://cdn.myportfolio.com/4ebaa126-52bc-40a4-92cd-2eaf82b8f18f/e445aeda-308c-4969-b811-8a0312ede5e1_rwc_10x0x1979x2800x4096.png?h=1e546330ee219f60efeb72b10e7b604a);
+                background-size: cover;
+                padding: 30px;
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+            
+                gap: 20px;
+                padding-top: 100px;
+} */
 .main-header{
     height: 60px;
     position: fixed;
@@ -353,6 +366,62 @@
         border: 1px solid #022A55;
         background-color:#022A55;
         box-shadow: 0px 5px 10px 0px rgba(3, 8, 1, 2)
+    }
+    /* projects */
+    .project-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 350px;
+        height: 472px;
+        background-color: #022A55;
+        margin-bottom: 30px;
+        box-shadow: 0px 5px 10px 0px rgb(3, 8, 1, 2);
+        position: relative;
+    }
+    .card-image{
+        display: block;
+        width: 299px;
+        height: 200px;
+        object-fit: cover;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-left: 23px;
+        box-shadow: 0px 5px 10px 0px rgb(3 8 1);
+        position: absolute;
+        top: 45px;
+    }
+    .card-detail{
+        margin-right: 15px;
+        color: #f0d47c;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .peoject-name{
+        font-weight: bold;
+        list-style: none;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: #e4bc4c;
+        box-shadow: 0px 5px 10px 0px rgb(3 8 1);
+        display: inline;
+        position: absolute;
+        top: 287px;
+    }
+    .project-card-details{
+        bottom: 30px;
+        /* position: absolute; */
+        position: relative;
+        top: 132px;
+    }
+    .ferme{
+        /* margin-right: 37px; */
+        left: 16px;
+    }
+    #insta{
+        top: 106px;
     }
     
 }
