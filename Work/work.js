@@ -27,3 +27,22 @@ $botoesDeFechar.forEach(function ($btn) {
       .classList.remove("caixa-conteudo-ativo");
   });
 });
+
+
+function generateMailtoLink() {
+  var subject = document.getElementById("subjectTextField");
+  var body = document.getElementById("bodyTextField");
+  var recipientEmail = "monica.krpatel@email.com";
+  var emailSubject = subject.value;
+  var emailBody = body.value;
+  
+  var mailtoLink = "mailto:" + recipientEmail + "?subject=" + emailSubject + "&body=" + emailBody;
+  
+  return mailtoLink;
+}
+
+
+var sendEmailLink = document.getElementById("send-email");
+sendEmailLink.addEventListener("click", function() {
+  window.open(generateMailtoLink());
+});

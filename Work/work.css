@@ -44,8 +44,12 @@
     color: #022A55;
     font-size: 27px;
     font-weight: bold;
- position: fixed;
- left:50%;
+    position: fixed;
+ /* left:50%; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 /* education */
@@ -613,6 +617,8 @@
   }
   
   .c_button {
+    width: 200px;
+    text-align: center;
     color: black;
     font-weight: bold;
     box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
