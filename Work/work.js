@@ -1,4 +1,14 @@
 // projects logic
+var url = window.location.href;
+var params = new URLSearchParams(window.location.search);
+
+var param1 = params.get("contact");
+if(param1) {
+  scrollToDiv();
+}
+
+
+
 
 var $conteudoGeral = document.querySelector(".conteudo-geral");
 var $conteudoEmArray = [].slice.call(document.querySelectorAll(".componente"));
@@ -46,3 +56,42 @@ var sendEmailLink = document.getElementById("send-email");
 sendEmailLink.addEventListener("click", function() {
   window.open(generateMailtoLink());
 });
+
+// navbar mobile
+var menuButton = document.getElementById("menu-button");
+
+menuButton.addEventListener("click", myFunction);
+
+function myFunction() {
+  menuButton.classList.toggle("active");
+  document.getElementById("line-1").classList.toggle("active");
+  document.getElementById("line-2").classList.toggle("active");
+  document.getElementById("line-3").classList.toggle("active");
+  document.getElementById("menu").classList.toggle("active");
+};
+
+
+
+function scrollToDiv() {
+  var contactNav = document.getElementById("contact-nav");
+  contactNav.style.color="#f0d47c";
+  contactNav.style.textDecoration="underline";
+  contactNav.style.fontWeight="bold";
+  var workNav = document.getElementById("workNav");
+  workNav.style.color="white";
+  workNav.style.fontWeight="100";
+  workNav.style.textDecoration="none";
+  var element = document.getElementById("contact-mee");
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+let about=document.getElementById("navAbout");
+// console.log(about)
+about.addEventListener=("click", samFunction);
+ 
+function samFunction(){
+  // console.log("working")
+  window.open(abo)
+}
+
+

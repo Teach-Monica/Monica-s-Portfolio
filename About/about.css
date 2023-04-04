@@ -439,3 +439,80 @@ i::before {
     }
 
 }
+@media screen and (max-width: 720px) {
+  #menu-button{
+    background: #022A55;
+    width: 38px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: all linear .3s;
+    padding: 4px;
+    margin-left: 10px;
+    z-index: 2;
+  }
+  
+  #menu-button.active{
+    background: #e4bc4c;
+  }
+  #line-1,#line-2,#line-3{
+    width: 90%;
+    background: #fff;
+    height: 4px;
+    margin: 4px auto;
+    border-radius: 2px;
+    transition: all linear .3s;
+  }
+  
+  #line-1.active{
+  -webkit-transform: translate(1px,9px) rotate(45deg);
+  transform: translate(1px,9px) rotate(45deg);
+  }
+  #line-2.active{
+  opacity: 0;
+  }
+  
+  #line-3.active{
+    -webkit-transform: translate(0px,-7px) rotate(45deg);
+    transform: translate(0px, -7px) rotate(-45deg);
+  }
+  
+  #menu{
+    background: #3d3d3d;
+    width: 150px;
+    padding: 10px;
+    padding-top: 30px;
+    color: #fff;
+    font-family: arial;
+    font-size: 1.3rem;
+    display: none;
+    position: absolute;
+    top: 8px;
+    left:6px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  #menu.active{
+  display: block;
+    }
+  #menu ul{
+    list-style: none;
+  }
+  
+  #menu ul li{
+    margin: 8px 0;
+  }
+  .nav-buttons{
+    display: none;
+
+  }
+}
+@media screen and (min-width: 720px) {
+  #menu-button{
+display: none;
+}
+#menu{
+    display: none;
+  }
+
+}

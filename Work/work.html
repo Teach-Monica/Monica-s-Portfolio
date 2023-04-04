@@ -18,19 +18,41 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
+   
     <div class="main-header">
             <div class="nav-buttons">
                 <a class="nav-texts" href="../index.html"> Homepage </a>
                 <a 
                 class="nav-texts"
-                style="font-size: 20px; font-weight: bolder"
-                href="#"
+                style="font-size: 20px; font-weight: bolder";
                 class="nav-texts" href="../Work/work.html"> Work </a>
-                <a class="nav-texts" href="../About/about.html">About</a>
+                <a id="navAbout" class="nav-texts" href="../About/about.html"> About </a>
+            </div>
+            
+            <div id="menu-button">
+              <div id="line-1"></div>
+              <div id="line-2"></div>
+              <div id="line-3"></div>
+            </div>
+            <div id="menu">
+              <ul>
+                <a id="workNav" style="color: #e4bc4c;text-decoration: underline;font-weight: bold;" href="./work.html"> 
+                  <li >Work</li>
+              </a>
+                <a style="color: white; text-decoration: none;" href="../index.html"> 
+                  <li>Homepage</li>
+                </a>
+                
+                <a style="color: white; text-decoration: none;" href="../About/about.html"> 
+                  <li>About</li>
+                </a>
+                <li id="contact-nav" onclick="scrollToDiv()">Contact</li>
+              </ul>
             </div>
               <div class="nav-name">Monica.</div>
-              <div></div>
     </div>
+     <!-- mobile navbar -->
+    
     <!-- body -->
     <div
               style="
@@ -465,7 +487,7 @@
 
     <div class="cm about">
         <img  class="working_img" src="working1.png" alt="">
-    <div class="contact_me">
+    <div class="contact_me" id="contact-mee">
         <div class="cm_left">
             <div class="cm_head">Get in touch</div>
             <div class="cm_description">I’m very approachable and would love to speak to you. Feel free to call, send me an email . Follow me in social media or simply complete the enquiry form.</div>
